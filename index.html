@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="css/slider.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="green">
 <header>
     <nav class="main-navigation">
         <img src="img/Logo.png" width="154" height="64" alt="Логотип">
-
         <ul class="menu-left">
             <li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
                 <ul>
                     <li><a id="bold" href="#">Новинки</a></li>
                     <hr>
@@ -27,7 +26,6 @@
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
         </ul>
-
         <ul class="menu-right">
             <li>
                 <button class="search" onclick="toggle('search-form')"></button>
@@ -56,6 +54,7 @@
     </nav>
 </header>
 <div class="carusel">
+    <p class="shadow">.</p>
     <div class="info">
         <p>
             C 10 до 20, ежедневно
@@ -76,7 +75,7 @@
                     <img class="bottom" src="img/ice_cream2.png">
                     <div class="ice_cream_main">
                         <h1 class="ice_cream_main_text">Крем-брюле и пломбир<br> с малиновым джемом</h1>
-                        <button>Давайте оба!</button>
+                        <button onclick="kisa()">Давайте оба!</button>
                     </div>
                 </div>
             </div>
@@ -88,7 +87,6 @@
                     <div class="ice_cream_main">
                         <h1 class="ice_cream_main_text">Шоколадный пломбир и <br> лимонный сорбет</h1>
                         <button>Давайте оба!</button>
-
                     </div>
                 </div>
             </div>
@@ -114,106 +112,109 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="promo">
+        <div class="raspberry promo-block">
+            <div>
+                <p class="name">Малинка даром!</p>
+                <p class="promo-text"><i class="ice-cream"></i> При покупке 2 кг любого фруктового мороженого, добавим
+                    <br>
+                    в ваш заказ банку малинового варенья
+                    бесплатно.</p>
+            </div>
+            <button class="btn">Хочу варенье!</button>
+        </div>
+        <div class="chocolate promo-block">
+            <p class="name">Шоколадки даром!</p>
+            <p class="promo-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br> вкуснейшей шоколадной
+                присыпки
+                совершенно бесплатно.</p>
+            <button class="btn">Хочу шоколадки!</button>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <div class="menu-ice-cream">
+        <div class="menu-ice-cream-container">
+            <div class="orange">
+                <i class="hit"></i>
+                <p class="price">310 &#x20bd;/кг</p>
+                <i class="p"></i>
+            </div>
+            <p class="kind">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+        </div>
+        <div class="menu-ice-cream-container">
+            <div class="coffee">
+                <i class="hit"></i>
+                <p class="price">380 &#x20bd;/кг</p>
+                <i class="p"></i>
+            </div>
+            <p class="kind">Сливочно-кофейное с кусочками шоколада</p>
+        </div>
+        <div class="menu-ice-cream-container">
+            <div class="strawberry">
+                <i class="hit"></i>
+                <p class="price">355 &#x20bd;/кг</p>
+                <i class="p"></i>
+            </div>
+            <p class="kind">Сливочно-клубничное с присыпкой из белого шоколада</p>
+        </div>
+        <div class="menu-ice-cream-container">
+            <div class="caramel">
+                <i class="hit"></i>
+                <p class="price">415 &#x20bd;/кг</p>
+                <i class="p"></i>
+            </div>
+            <p class="kind">Сливочное крем-брюле с карамельной подливкой</p>
+        </div>
+    </div>
+    <div class="about-gllacy">
+        <p class="main-about-gllacy">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+            производства на развес</p>
+        <div class="left-part-about-gllacy">
+            <div class="cow">
+                <i class="icon"></i>
+                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+                    связывает долговременное сотрудничество.</p>
+            </div>
+            <div class="temperature">
+                <i class="icon"></i>
+                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+                    мороженому растаять в пути и позволяет сохранить превосходный вкус. </p>
+            </div>
 
-<div class="promo">
-    <div class="raspberry promo-block">
-        <div>
-            <p class="name">Малинка даром!</p>
-            <p class="promo-text"><i class="ice-cream"></i> При покупке 2 кг любого фруктового мороженого, добавим <br>
-                в ваш заказ банку малинового варенья
-                бесплатно.</p>
+
         </div>
-        <button class="btn">Хочу варенье!</button>
-    </div>
-    <div class="chocolate promo-block">
-        <p class="name">Шоколадки даром!</p>
-        <p class="promo-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br> вкуснейшей шоколадной присыпки
-            совершенно бесплатно.</p>
-        <button class="btn">Хочу шоколадки!</button>
-    </div>
-</div>
-<div class="clr"></div>
-<div class="menu-ice-cream">
-    <div class="menu-ice-cream-container">
-        <div class="orange">
-            <i class="hit"></i>
-            <p class="price">310 &#x20bd;/кг</p>
-            <i class="p"></i>
+        <div class="right-part-about-gllacy">
+            <div class="icecream">
+                <i class="icon"></i>
+                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
+                    оборудования и проверенных временем технологий.</p>
+            </div>
+            <div class="leaf">
+                <i class="icon"></i>
+                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+                    дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья </p>
+            </div>
         </div>
-        <p class="kind">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
     </div>
-    <div class="menu-ice-cream-container">
-        <div class="coffee">
-            <i class="hit"></i>
-            <p class="price">380 &#x20bd;/кг</p>
-            <i class="p"></i>
-        </div>
-        <p class="kind">Сливочно-кофейное с кусочками шоколада</p>
-    </div>
-    <div class="menu-ice-cream-container">
-        <div class="strawberry">
-            <i class="hit"></i>
-            <p class="price">355 &#x20bd;/кг</p>
-            <i class="p"></i>
-        </div>
-        <p class="kind">Сливочно-клубничное с присыпкой из белого шоколада</p>
-    </div>
-    <div class="menu-ice-cream-container">
-        <div class="caramel">
-            <i class="hit"></i>
-            <p class="price">415 &#x20bd;/кг</p>
-            <i class="p"></i>
-        </div>
-        <p class="kind">Сливочное крем-брюле с карамельной подливкой</p>
-    </div>
-</div>
-<div class="about-gllacy">
-    <p class="main-about-gllacy">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
-        производства на развес</p>
-    <div class="left-part-about-gllacy">
-        <div class="cow">
-            <i class="icon"></i>
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-                связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="temperature">
-            <i class="icon"></i>
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-                мороженому растаять в пути и позволяет сохранить превосходный вкус. </p>
+    <div class="news">
+        <div class="strawberry-ice news-block">
+            <div>
+                <p class="h2">Новое в нашем блоге</p>
+                <p class="news-text-strawberry">10 способов сервировки<br> фруктовых щербетов к<br> столу</p>
+            </div>
         </div>
 
-
-    </div>
-    <div class="right-part-about-gllacy">
-        <div class="icecream">
-            <i class="icon"></i>
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
-                оборудования и проверенных временем технологий.</p>
-        </div>
-        <div class="leaf">
-            <i class="icon"></i>
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-                дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья </p>
-        </div>
-    </div>
-</div>
-<div class="news">
-    <div class="strawberry-ice news-block">
-        <div>
-            <p class="h2">Новое в нашем блоге</p>
-            <p class="news-text-strawberry">10 способов сервировки<br> фруктовых щербетов к<br> столу</p>
-        </div>
-    </div>
-
-    <div class="postal news-block">
-        <div class="postal-white">
-            <p class="news-text-postal"> Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br> всего самого
-                вкусного,
-                что у нас происходит. Обещаем не спамить<br> и не слать всякой ненужной ерунды. Честно =) </p>
-            <form class="mailing" id="mailing-form">
-                <input name="e" placeholder="Электронная почта" type="email"/>
-                <button>Отправить</button>
-            </form>
+        <div class="postal news-block">
+            <div class="postal-white">
+                <p class="news-text-postal"> Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br> всего
+                    самого вкусного,
+                    что у нас происходит. Обещаем не спамить<br> и не слать всякой ненужной ерунды. Честно =) </p>
+                <form class="mailing" id="mailing-form">
+                    <input name="e" placeholder="Электронная почта" type="email"/>
+                    <button>Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -266,63 +267,15 @@
         <p>Сделано в <a>HTML Academy</a> © 2017</p>
     </div>
 </footer>
-
-
-<script>
-    function toggle(id) {
-
-        if (id !== 'search-form') {
-            var searchForm = document.getElementById('search-form');
-
-            searchForm.classList.remove('block');
-        }
-
-        if (id !== 'login-form') {
-
-
-            var loginForm = document.getElementById('login-form');
-
-            loginForm.classList.remove('block');
-        }
-
-
-        var form = document.getElementById(id);
-        form.classList.toggle('block');
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>
+<div class="feedback">
+    <p>Мы обязательно вам ответим!</p>
+    <form id="feedback">
+        <input name="name" placeholder="Как вас зовут?" type="text"/>
+        <input name="mail" placeholder="Ваша почта для ответа?" type="email"/>
+        <input class="feedback-class" name="text" placeholder="Напишите что-нибудь..." type="text"/>
+        <button class="btn">Отправить</button>
+    </form>
+</div>
+<script src="js/script.js"></script>
 </body>
-
 </html>

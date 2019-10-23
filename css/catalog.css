@@ -1,0 +1,724 @@
+html, body {
+    background: #8da799;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.search, .login {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 32px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    border: none;
+    background-position: center;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.cart {
+    background-color: #f7f6f3;
+    height: 32px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    border: none;
+    background-position: center;
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;
+}
+
+.card-items{
+    background-color: #f8f7f4;
+    height: 262px;
+    border-radius: 5px;
+    box-shadow: 0 9px 20px 20px hsla(0, 0%, 0%, 0.12);
+    margin-top: 5px;
+    z-index: 80;
+}
+
+.card-items p{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 532px;
+    font-weight: 700;
+}
+
+.card-items .btn{
+    height: 46px;
+    width: 172px;
+    background-color: #f16642;
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    margin-left: 478px;
+    margin-top: 3px;
+}
+
+.card-items .line{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+
+.card-table tr, td{
+    padding: 10px;
+}
+
+.card-table td:last-child{
+    padding-right: 20px;
+}
+
+.card-table .padding-right{
+    padding-right: 40px;
+}
+
+.card-table{
+    margin-left: 10px;
+    margin-right: 40px;
+    color: #323232;
+}
+
+.card-table a{
+    color: #a6a6a5;
+}
+
+.search {
+    background-image: url("../img/search.png");
+    width: 32px;
+}
+
+.login {
+    background-image: url("../img/login.png");
+    background-position: 16px center;
+    padding-left: 44px;
+    padding-right: 16px;
+    margin-left: 10px;
+}
+
+.cart {
+    background-image: url("../img/cart-red.png");
+    background-position: 16px center;
+    padding-left: 45px;
+    padding-right: 34px;
+    margin-left: 10px;
+}
+
+.menu-right {
+    list-style-type: none;
+    float: right;
+    margin-right: 27px;
+}
+
+.menu-right li {
+    float: left;
+    position: relative;
+}
+
+ul.menu-left li {
+    display: inline-block;
+    border-bottom: 5px solid transparent;
+}
+
+ul.menu-left {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.menu-left li a {
+    height: 32px;
+    padding: 0 14px;
+    display: inline-block;
+}
+
+.menu-left li a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 30px;
+    margin-top: 23px;
+}
+
+.catalog a{
+   background-color: #d07058;
+    outline: none;
+    border-radius: 30px;
+    line-height: 32px;
+    height: 35px;
+}
+
+.main-navigation {
+    margin-left: 27px;
+}
+
+.main-navigation img {
+    margin-top: 9px;
+    float: left;
+}
+
+.info {
+    text-align: right;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+    margin-right: 27px;
+    position: absolute;
+    right: 0;
+    z-index: 60;
+    margin-top: -35px;
+}
+
+.phone {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.site-guide{
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.site-guide li{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.site-guide li a{
+   text-decoration: none;
+}
+
+.site-guide li b{
+    text-decoration:underline;
+    font-weight: 300;
+}
+
+.site-guide li a:visited{
+    color: #ffffff;
+}
+
+.filters .name{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 35px;
+    margin-top: 0;
+}
+
+.menu-ice-cream-container{
+    width: 21%;
+    display: inline-block;
+    margin: 0 2%;
+    min-height: 336px;
+    float: left;
+    position: relative;
+}
+
+.menu-ice-cream{
+    text-align: center;
+    margin: 5%;
+}
+
+.orange, .coffee, .strawberry, .caramel, .lingonberry, .blueberry, .lemon, .milk-chocolate, .vanilla, .menthol, .milk-black-chocolate, .mint{
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    height: 266px;
+    outline: none;
+    border: none;
+    width:266px;
+    text-align: left;
+    position: relative;
+    top: 0;
+}
+
+.orange{
+    background-image: url("../img/orange-icecream.jpg");
+}
+
+.coffee{
+    background-image: url("../img/chocolate-icecream.jpg");
+}
+
+.strawberry{
+    background-image: url("../img/strawberry-icecream.jpg");
+}
+
+.caramel{
+    background-image: url("../img/caramel-icecream.jpg");
+}
+
+.lingonberry {
+    background-image: url("../img/lingonberry-ice.jpg");
+}
+
+.blueberry{
+    background-image: url("../img/blueberry-ice.jpg");
+}
+
+.lemon{
+    background-image: url("../img/lemon-ice.jpg");
+}
+
+.milk-chocolate{
+    background-image: url("../img/milk-chocolate-icecream.jpg");
+}
+
+.vanilla{
+    background-image: url("../img/vanilla-icecream.jpg");
+}
+
+.menthol{
+    background-image: url("../img/menthol-icecream.jpg");
+}
+
+.milk-black-chocolate{
+    background-image: url("../img/milk-black-chocolate-icecream.jpg");
+}
+
+.mint{
+    background-image: url("../img/mint-icecream.jpg");
+}
+
+.kind{
+    color: white;
+    font-size: 16px;
+    text-decoration: underline solid white;
+    bottom: 10px;
+}
+
+i.hit {
+    display: inline-block;
+}
+
+i.hit {
+    background-image: url("../img/hit.png");
+    width: 61px;
+    height: 61px;
+}
+
+.price{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    position: absolute;
+    top: 160px;
+}
+
+.pages{
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    margin-top: 50px;
+}
+
+.pages li{
+    display: inline-block;
+    padding: 4px;
+}
+
+.pages li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    height: 21px;
+    width: 21px;
+    display: inline-block;
+}
+
+.pages li a:hover {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.twitter, .instagram, .facebook, .vk{
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: #c2cec7 solid 3px;
+}
+
+.social{
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+
+.social li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.twitter{
+    background-image: url("../img/i_twitter.png");
+}
+
+.instagram{
+    background-image: url("../img/i_instagram.png");
+}
+
+.facebook{
+    background-image: url("../img/i_facebook.png");
+}
+
+.vk{
+    background-image: url("../img/i_vk.png");
+}
+
+.left-info, .right-info{
+    display: inline-block;
+}
+
+.suppliers-and-produce, .documents-and-standards {
+    list-style-type: none;
+    color: white;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.suppliers-and-produce a, .documents-and-standards a:visited{
+    list-style-type: none;
+    color: white;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.heart{
+    display: inline-block;
+    background-image: url("../img/i-heart.png");
+    background-repeat: no-repeat;
+    height: 13px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.produce{
+    padding-left: 21px;
+}
+
+.logo p{
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
+
+.logo a{
+    text-decoration: underline;
+}
+
+.icon, .information,.logo {
+    display: inline-block;
+}
+
+.logo{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.information{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.footer{
+    display: inline-block;
+    width: 96%;
+    height: 100px;
+    background-image: url("../img/line-footer.jpg");
+    background-repeat: repeat-x;
+    margin: 0 2%;
+}
+
+.clr{
+    clear: both;
+}
+
+.btm-view{
+    height: 46px;
+    background-color: #f06441;
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 40;
+    position: absolute;
+    left: 36px;
+    top: 312px;
+    display: none;
+}
+
+.block {
+    display:block !important;
+}
+
+.dropdown-form {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.checkbox{
+    display: inline-block;
+    margin: 5px;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    padding-left: 37px;
+    padding-top: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label::before{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    top: 3px;
+    left: 0;
+}
+
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 7px;
+    width: 13px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(-45deg);
+    left: 5px;
+    top: 4px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: none;
+}
+
+.second-filter{
+    background-color: #a8bab0;
+    height: 36px;
+    width: 816px;
+    margin-left: 26px;
+    border-radius: 30px;
+    margin-top: 10px;
+    float: left;
+}
+
+.second-filter-part .btn{
+    height: 36px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #a8bab0;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: absolute;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.second-filter-part p{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 45px;
+    margin-bottom: -3px;
+}
+
+.first-filter a{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+select{
+    height: 36px;
+    background-color: #a8bab0;
+    border: none;
+    border-radius: 30px;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+    outline: none;
+    float: left;
+    margin-top: 5px;
+}
+
+select:focus{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.fatty{
+    background-color: #aabcb2;
+    height: 36px;
+    width: 494px;
+    border-radius: 50px;
+    margin-left: 448px;
+    margin-top: 5px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 64px;
+    padding-top: 7px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    height: 18px;
+    width: 18px;
+    background-color: #aabcb2;
+    border-radius: 50%;
+    border: 4px solid #eef2f0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #eef2f0;
+}
+
+.slider{
+    width: 178px;
+    height: 4px;
+    background:#d1dad3;
+    position:relative;
+    margin-bottom:50px;
+    margin-left:20px;
+    margin-top: 15px;
+}
+
+.slider .bar{
+    position:absolute;
+    left:20px;
+    width:82px;
+    background:#f8f7f4;
+    height:100%;
+}
+
+.slider .bar .lp span{
+    position:relative;
+    left:-30px;
+}
+
+.slider .bar .rp span{
+    position:relative;
+    left:10px;
+}
+
+.slider .bar .lp,.slider .bar .rp{
+    cursor:pointer;
+    background:#ababab;
+    width:4px;
+    height:4px;
+    border:8px solid #f8f7f4;
+    border-radius:100%;
+    position:absolute;
+    line-height:400%;
+    color:white;
+    user-select:none;
+}
+
+.slider .bar .lp{
+    left:0;
+    top:-8px;
+}
+
+.slider .bar .rp{
+    left:100%;
+    top:-8px;
+}
+
+.price-slider{
+    background-color: #aabcb2;
+    height: 36px;
+    width: 220px;
+    border-radius: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
